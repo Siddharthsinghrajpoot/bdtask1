@@ -4,6 +4,8 @@ import express from "express";
 import dotenv from "dotenv";
 import { connectDB } from "./config/db.js";
 import eventsRouter from "./routes/events.js";
+import nudgesRoutes from "./routes/nudges.js";
+
 // DB connection module
 
 // Load environment variables from .env
@@ -16,7 +18,7 @@ app.use(express.json());
 
 // Test route
 app.use("/api/v3/app", eventsRouter);
-
+app.use("/api/v3/app", nudgesRoutes); 
 // Port from .env or fallback
 const PORT = process.env.PORT || 5000;
 
