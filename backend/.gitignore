@@ -18,7 +18,7 @@ node_modules/
 .npm
 
 # Environment variables
-.env
+.env          # 🔒 Ignore this to keep your credentials safe
 
 # Build output
 dist/
