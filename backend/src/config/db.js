@@ -21,11 +21,11 @@ export async function connectDB() {
     if (!client) {
       client = new MongoClient(MONGO_URL);
       await client.connect(); // connect to DB
-      console.log("✅ MongoDB connected successfully");
+      console.log(" MongoDB connected successfully");
     }
     return client; // return client for reuse
   } catch (err) {
-    console.error("❌ MongoDB connection failed:", err);
+    console.error(" MongoDB connection failed:", err);
     process.exit(1); // stop server if DB not connected
   }
 }
