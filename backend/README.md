@@ -74,7 +74,9 @@ http://localhost:5000/api/v3/app
   "sub_category": "AI",
   "rigor_rank": 5,
   "files": ["banner.png"]
+
 }
+```
 
 
 2️⃣ Get All Events
@@ -128,7 +130,9 @@ DELETE /events/:id
   "image": "https://example.com/cover.png",
   "icon": "https://example.com/icon.png",
   "invitation": "Join us today!"
+
 }
+```
 
 2️⃣ Get All Nudges
 
